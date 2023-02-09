@@ -1,0 +1,87 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Front end development using html css and javascript">
+    <meta name="author" content="Centriq Traning">
+    <meta name="keywords" content="Centriq, Front End, HTML, CSS, JavaScript, PUX">
+    <!-- BootStrap stylesheet -->
+    <link rel="stylesheet" href="/css/vendor/bootstrap.min.css">
+    <!-- BootStrap Icons stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Nick Sachau</title>
+</head>
+<body>
+    <!-- Create side navbar -->
+    <header class="d-flex flex-column jusify-content-center">
+        <aside class="navbar sideNav" id="sidenav">
+            <ul>
+                <li>
+                    <a href="#landing">
+                        <i class="bi bi-house-door"></i> <span>About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#facts">
+                        <i class="bi bi-person"></i><span>Facts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills">
+                        <i class="bi bi-file-earmark"></i><span>Skills</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#resume">
+                        <i class="bi bi-journal"></i><span>Resume</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects">
+                        <i class="bi bi-hdd-stack"></i><span>Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <i class="bi bi-envelope"></i><span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </header>
+
+    <!-- Mobile hambuger menu -->
+    <div class="hamburger">
+        <i class="bi bi-list"></i>
+    </div>
+
+    @RenderBody()
+
+    <footer>
+        <h4>Nick Sachau</h4>
+        <p>Jr Full Stack Web Developer</p>
+        <ul>
+            <!-- Create social links -->
+            <li>Linked in</li>
+            <li>Github</li>
+        </ul>
+        <p class="copyright"></p>
+    </footer>
+
+    <script src="/js/vendor/bootstrap.min.js"></script>
+
+    <script src="/js/vendor/jquery-3.6.0.min.js"></script>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
