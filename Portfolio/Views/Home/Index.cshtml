@@ -25,13 +25,15 @@
                     <div class="col-lg-3 col-sm-12 offset-3 text-start">
                         <ul>
                             <li><strong>Birthday:</strong> March 3, 2004</li>
-                            <li><strong>Website:</strong> <a href="nickthedev.net">www.nickthedev.net</a></li>
+                            <li><strong>Website:</strong> <a target="_blank" href="http://nickthedev.net">www.nickthedev.net</a></li>
+                            <li><strong>GitHub:</strong> <a target="_blank" href="https://github.com/Nick-Sachau">https://github.com/Nick-Sachau</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3 col-sm-12 text-start">
                         <ul>
                             <li><strong>City:</strong> Glendale, USA</li>
                             <li><strong>Age:</strong> <span id="age"></span></li>
+                            <li><strong>Linked-In:</strong> <a target="_blank" href="https://www.linkedin.com/in/nick-sachau-6a5210212">Nick-Sachau</a></li>
                         </ul>
                     </div>
                 </div>
@@ -215,8 +217,35 @@
         <div class="container">
             <div class="section-title">
                 <h2>Projects</h2>
-                <div class="commingSoon">
-                    <h1>Comming Soon...</h1>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="project">
+                            <h2 class="project-title">Dungeon app</h2>
+                            <img src="" alt="Dungeon app">
+                            <a class="link btn" href="">GitHub Link</a>
+                        </div>
+                        <div class="project">
+                            <h2 class="project-title">Placeholder 3</h2>
+                            <img src="" alt="Placeholder">
+                            <p class="comingSoon">Coming Soon...</p>
+                            <a class="link btn" href="">GitHub Link</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="project">
+                            <h2 class="project-title">Placeholder 2</h2>
+                            <img src="" alt="Placeholder">
+                            <p class="comingSoon">Coming Soon...</p>
+                            <a class="link btn" href="">GitHub Link</a>
+                        </div>
+                        <div class="project">
+                            <h2 class="project-title">Placeholder 4</h2>
+                            <img src="" alt="Placeholder">
+                            <p class="comingSoon">Coming Soon...</p>
+                            <a class="link btn" href="">GitHub Link</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -226,20 +255,7 @@
             <div class="section-title">
                 <h2>Class Mates</h2>
                 <div class="row">
-                    <div class="col-lg-5 person">
-                        <h3 class="name">Nick Sachau</h3>
-                        <div class="pictureWrapper">
-                            <img class="picture nick" src="/images/nick.png" alt="Nick Sachau Picture">
-                        </div>
-                        <p>Nick's interest in computers began early in life. He began to translate that interest into learning code in his highschool career where he completed a two year web development course, for college credit, before graduating. As a collegue he is more than willing to share his knowledge and help with what he can. He's a true asset to the team and always takes his roles seriously.</p>
-                        <div class="link">
-                            <a target="_blank" href="https://www.linkedin.com/in/nick-sachau-6a5210212/">Linked in</a>
-                            <a target="_blank" href="https://github.com/Nick-Sachau">Git Hub</a>
-                            <a target="_blank" href="http://nickthedev.net">Portfolio</a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-5 person offset-1">
+                    <div class="col-lg-6 person">
                         <h3 class="name">Jesse Galloway</h3>
                         <div class="pictureWrapper">
                             <img class="picture" src="/images/jesse.jfif" alt="Jesses Picture">
@@ -252,16 +268,16 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-5 person offset-3">
+                    <div class="col-lg-6 person">
                         <h3 class="name">Dawson Meier</h3>
                         <div class="pictureWrapper">
                             <img class="picture" src="/images/dawson.jfif" alt="Dawson Picture">
                         </div>
                         <p>Fellow Graduate of Centriq training. Dawsons interest in Development has been encouraged by his father, who is a professional in the field. From working on his personal projects to school and gaming with friends his skills and intillegent problem solving abilities are essential to any team he's becomes a part of.</p>
                         <div class="link">
-                            <a target="_blank" href="#">Linked in</a>
-                            <a target="_blank" href="#">Git Hub</a>
-                            <a target="_blank" href="#">Portfolio</a>
+                            <a target="_blank" href="https://www.linkedin.com/in/dawson-meier-b9781a238">Linked in</a>
+                            <a target="_blank" href="https://github.com/DMeier12">Git Hub</a>
+                            <a target="_blank" href="http://dawsonmeierdev.com">Portfolio</a>
                         </div>
                     </div>
                 </div>
@@ -272,7 +288,36 @@
         <div class="container">
             <div class="section-title">
                 <h2>Contact</h2>
-                <p>Comming soon...</p>
+
+                <div class="col-lg-6 offset-3">
+                    <form asp-action="Contact" class="php-email-form">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input class="form-control" placeholder="Name" id="name"> <!-- asp-for="" -->
+                                <span class="text-danger"></span> <!-- asp-validation-for="" -->
+                            </div>
+                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                <input class="form-control" id="email" placeholder="Email"> <!-- asp-for="" -->
+                                <span class="text-danger"></span> <!-- asp-validation-for="" -->
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                            <span class="text-danger"></span> <!-- asp-validation-for="" -->
+                        </div>
+                        <div class="form-group mt-3">
+                            <textarea class="form-control" rows="5" placeholder="Message"></textarea> <!-- asp-for="" -->
+                            <span class="text-danger"></span> <!-- asp-validation-for="" -->
+                        </div>
+                        <div class="text-center mt-4 form-group">
+                            <input type="submit" value="Send Message" class="btn btn-primary" />
+                        </div>
+                    </form>
+                </div>
+
             </div>
         </div>
     </section>
